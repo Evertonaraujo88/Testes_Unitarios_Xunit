@@ -1,0 +1,60 @@
+Relatório de Testes Unitários
+Projeto: ControleInventario
+Data: 01/08/2024
+Responsável: Everton Silva de Araujo
+
+- Sumário
+
+Introdução
+Objetivos dos Testes
+Ambiente de Testes
+Metodologia de Testes
+Casos de Teste
+Resultados dos Testes
+Conclusão
+Anexos
+
+- Introdução
+
+Este relatório documenta os testes unitários realizados no projeto ControleInventario. O objetivo é garantir que as principais funcionalidades do sistema de controle de inventário estejam funcionando corretamente e identificar possíveis melhorias.
+
+- Objetivos dos Testes
+
+Garantir que as funcionalidades principais do projeto estejam funcionando corretamente.
+Verificar a robustez e a confiabilidade do código.
+Identificar e corrigir possíveis bugs.
+
+- Ambiente de Testes
+
+Sistema Operacional: Windows 10
+Versão do .NET Core/Framework: .NET 8.0
+Ferramenta de Teste: xUnit
+Outros Detalhes Relevantes: Visual Studio 2022.
+
+- Metodologia de Testes
+
+A abordagem adotada para a realização dos testes unitários incluiu a utilização do framework xUnit. A estratégia de testes envolveu a criação de métodos de teste para validar as funcionalidades de adicionar produtos ao inventário e obter a quantidade de produtos pelo nome. Os casos de teste foram definidos para cobrir cenários típicos e extremos.
+
+ID      Descrição do Caso de Teste                      Entrada                     Saída Esperada                   Saída Real                      Status
+1       Testar adição de um novo produto                ProdutoA, 10                Produto adicionado com sucesso   Produto adicionado com sucesso  Aprovado
+2       Testar incremento de quantidade de produto      ProdutoA, 5                 Quantidade incrementada          Quantidade incrementada         Aprovado
+3       Testar adição de um segundo produto             ProdutoB, 8                 Produto adicionado com sucesso   Produto adicionado com sucesso  Aprovado
+4       Testar obtenção da quantidade de um produto     ProdutoA                    Quantidade correta retornada     Quantidade correta retornada    Aprovado
+5       Testar obtenção da quantidade de produto inexistente ProdutoInexistente      Quantidade zero retornada        Quantidade zero retornada       Aprovado
+
+- Resultados dos Testes
+
+Total de Casos de Teste: 5
+Casos Aprovados: 5
+Casos Reprovados: 0
+Percentual de Sucesso: 100%
+
+- Conclusão
+
+Os testes unitários realizados no projeto ControleInventario foram bem-sucedidos, com todas as funcionalidades principais sendo validadas corretamente. Todos os casos de teste passaram conforme o esperado. Recomenda-se a realização de testes contínuos para garantir a estabilidade do sistema com futuras atualizações e a inclusão de novos casos de teste para cobrir cenários adicionais.
+
+- Anexos
+
+Logs de testes
+Capturas de tela dos resultados dos testes
+Documentação adicional relevante
